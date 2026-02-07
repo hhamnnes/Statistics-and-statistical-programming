@@ -1,9 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from fractions import Fraction
 from scipy.stats import binom as bi
 
 n = int(input("Tast inn antall forsøk: "))
-p = float(input("Tast inn sannsynligheten: "))
+san = input("Tast inn sannsynligheten: ")
+
+#I like to have the possibility to write the probability in a fraction:
+try:
+    p = float(san)
+except:
+    p = float(Fraction(san))
 
 
 x = np.arange(n+1)
