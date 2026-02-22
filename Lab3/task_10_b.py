@@ -6,6 +6,8 @@ def likelihood_for_higher_weight(weight):
     mu = 760
     sigma = 10
     likelihood = 1 - norm.cdf(weight, mu, sigma)
+    #P(X > weight) = 1 - P(X <= weight) = 1 - CDF(weight) 
+    # = 1 F(weight)
     return likelihood
 
 # Task b)
