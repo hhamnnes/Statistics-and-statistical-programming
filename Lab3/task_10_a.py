@@ -1,3 +1,11 @@
+"""
+Oppgave 10
+a) Lag et Python-program som tegner normalfordelingen som benyttes i oppgave 9, altså
+N(760, 10). Tegn fordelingen for verdier mellom 720 og 800.
+Angi «Normalfordeling» som tittel på plottet, og med angivelse av x og f(x) på
+aksene, altså omtrent som dette:
+"""
+
 from scipy.stats import norm
 import numpy as np
 import matplotlib.pyplot as plt

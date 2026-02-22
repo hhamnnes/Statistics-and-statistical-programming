@@ -1,3 +1,9 @@
+"""
+b) Lag et Python-program som ber brukeren taste inn en vekt, og så beregner
+sannsynligheten for at et brød veier mer enn denne vekten, og skriver ut dette sammen
+med en passende ledetekst.
+"""
+
 from scipy.stats import norm
 import numpy as np
 import matplotlib.pyplot as plt
