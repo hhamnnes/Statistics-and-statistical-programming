@@ -59,6 +59,5 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-
-        
-        
+"""We can see that when the number of throws per round increases, the sample standard deviation decreases.
+This is consistent with the formula for standard error of the total average, which is σ/√n"""
