@@ -5,7 +5,6 @@ av 𝝈
 √𝒏 hvor 𝝈 er standardavviket du fant i spørsmål a, og n er antall kast i hver
 omgang."""
 
-import random
 import numpy as np 
 import matplotlib.pyplot as plt
 from task_2_b_class_version import DiceSimulation
