@@ -39,10 +39,14 @@ class DiceSimulation:
     def average_number_of_eyes(self):
         return self._average_number_of_eyes
     
+    def roll(self) -> int:
+        """Returnerer resultatet av ett terningkast (1-6)."""
+        return random.randint(1, 6)
+    
     def run(self) -> None:
         for round in range(self.number_of_rounds):
             for throw in range(self.num_throws):
-                self._total_number_of_eyes[round] += random.randint(1, 6)
+                self._total_number_of_eyes[round] += self.roll()
             self._average_number_of_eyes[round] = self._total_number_of_eyes[round] / self.num_throws
     
     def plot_histogram(self) -> None:
